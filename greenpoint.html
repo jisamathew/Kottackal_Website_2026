@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      GreenPoint — Unified Energy-Mobility Platform | Kottackal Business
+      Solutions
+    </title>
+    <meta
+      name="description"
+      content="GreenPoint fuses energy and mobility data into a single source of truth — enabling predictive insights, digital twin simulations, and smart fleet management."
+    />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KLQ6RECET6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KLQ6RECET6');
+</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/projects.css" />
+
+  <style>
+    /* ── VIDEO SECTION ── */
+    .video-section{background:var(--bg);padding:64px 0}
+    .video-section-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+    .video-wrap{border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-lg);border:1px solid var(--border);background:#000}
+    .video-wrap iframe{width:100%;aspect-ratio:16/9;display:block;border:none}
+    .video-label{padding:10px 16px;background:var(--white);border-top:1px solid var(--border);display:flex;align-items:center;gap:8px}
+    .vdot{width:7px;height:7px;background:var(--red);border-radius:50%;animation:vdotpulse 2s ease infinite;flex-shrink:0}
+    @keyframes vdotpulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+    .video-label span{font-size:12px;color:var(--muted);font-weight:500}
+    .video-intro-text h2{font-family:var(--fh);font-size:clamp(20px,2.6vw,30px);font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:12px}
+    .video-intro-text p{font-size:15px;color:darkslategray;line-height:1.8;font-weight:300;margin-bottom:14px}
+    .outcome-chip{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#16A34A;background:#DCFCE7;border:1px solid #BBF7D0;padding:5px 12px;border-radius:20px;margin-bottom:16px}
+
+    /* ── PROBLEM/SOLUTION — NUMBERED CARDS ── */
+    .ps-section{padding:64px 0}
+    .ps-section-bg{background:var(--white)}
+    .ps-section-bg2{background:var(--bg)}
+    .ps-columns{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:44px}
+    /* Column header */
+    .ps-col-head{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:16px;border-bottom:2px solid var(--border)}
+    .ps-col-head.red-border{border-bottom-color:#DC2626}
+    .ps-col-head.green-border{border-bottom-color:#16A34A}
+    .ps-col-label{font-family:var(--fh);font-size:18px;font-weight:700;color:var(--ink)}
+    .ps-col-icon{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+    .ps-col-icon.red{background:#FEE2E2;color:#DC2626}
+    .ps-col-icon.green{background:#DCFCE7;color:#16A34A}
+    /* Numbered point cards */
+    .ps-points{display:flex;flex-direction:column;gap:12px}
+    .ps-point{display:flex;align-items:flex-start;gap:14px;background:var(--bg);border-radius:10px;padding:16px 18px;border:1px solid var(--border);transition:border-color .28s,box-shadow .28s}
+    .ps-point:hover{border-color:rgba(177,10,25,.18);box-shadow:0 2px 12px rgba(0,0,0,.06)}
+    .ps-point.problem-pt{border-left:3px solid #FCA5A5}
+    .ps-point.solution-pt{border-left:3px solid #86EFAC}
+    .ps-point-num{font-family:var(--fh);font-size:22px;font-weight:700;line-height:1;flex-shrink:0;width:28px;margin-top:2px}
+    .ps-point-num.red{color:#DC2626}
+    .ps-point-num.green{color:#16A34A}
+    .ps-point-title{font-size:13.5px;font-weight:600;color:var(--ink);margin-bottom:3px;line-height:1.3}
+    .ps-point-desc{font-size:14.5px;color:darkslategray;line-height:1.6;font-weight:300}
+
+    @media(max-width:768px){
+      .video-section-grid{grid-template-columns:1fr}
+      .ps-columns{grid-template-columns:1fr}
+    }
+    @media(max-width:480px){
+      .ps-point{padding:13px 14px}
+      .ps-point-num{font-size:18px;width:22px}
+    }
+  </style>
+
+  </head>
+  <body>
+    <div id="topbar">
+      <div class="container">
+        <div class="tb-in">
+          <div class="tb-left">
+            <a href="mailto:director@kottackal.org"><i class="fa-solid fa-envelope"></i>director@kottackal.org</a
+            >
+            <a href="tel:+919447763144"
+              ><i class="fa-solid fa-phone"></i>+91-9447763144</a
+            >
+          </div>
+          <div class="tb-right">
+            <a
+              href="https://www.linkedin.com/company/kottackal-business-solutions-pvt-ltd-/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav id="nav">
+      <div class="container">
+        <div class="nav-in">
+          <a href="index.html" class="nav-logo"
+            ><img src="assets/img/logo.png" alt="Kottackal Business Solutions"
+          /></a>
+          <ul class="nav-links">
+            <li><a href="index.html#problem">What We Solve</a></li>
+            <li><a href="index.html#capabilities">Capabilities</a></li>
+            <li><a href="index.html#solutions">Solutions</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact" class="nav-btn">Talk to Us</a></li>
+          </ul>
+          <button class="burger" id="burger">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="mob-nav" id="mobNav">
+      <a href="index.html#problem">What We Solve</a>
+      <a href="index.html#capabilities">Capabilities</a>
+      <a href="index.html#solutions">Solutions</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Talk to Us</a>
+    </div>
+
+    <section id="hero">
+      <div class="hero-photo">
+        <img
+          src="./assets/img/greenpoint/hero-img.avif"
+          alt="EV Charging — GreenPoint"
+          loading="eager"
+        />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-red-bar"></div>
+      <div class="container" style="position: relative; z-index: 1">
+        <div class="hero-content">
+          <div class="breadcrumb">
+            <a href="index.html">Home</a
+            ><i class="fa-solid fa-chevron-right"></i
+            ><a href="index.html#solutions">Solutions</a
+            ><i class="fa-solid fa-chevron-right"></i
+            ><span style="color: var(--ink)">GreenPoint</span>
+          </div>
+          <div class="hero-tag">Connected Ecosystems</div>
+          <h1 class="hero-h1">
+            From energy data islands<br />to <em>intelligent ecosystems.</em>
+          </h1>
+          <p class="hero-p">
+            GreenPoint is a unified B2B SaaS platform that fuses disparate
+            energy and mobility data into a single source of truth — enabling
+            predictive insights, digital twin simulations, and smarter fleet
+            operations.
+          </p>
+          <div class="hero-pills">
+            <div class="pill">
+              <i class="fa-solid fa-bolt"></i>Hardware-agnostic
+            </div>
+            <div class="pill">
+              <i class="fa-solid fa-car-battery"></i>EV Fleet Management
+            </div>
+            <div class="pill">
+              <i class="fa-solid fa-brain"></i>Digital Twin &amp; Simulation
+            </div>
+            <div class="pill">
+              <i class="fa-solid fa-chart-line"></i>Predictive Analytics
+            </div>
+          </div>
+          <div class="hero-ctas">
+            <a href="#intro" class="btn-red"
+              >See How It Works <i class="fa-solid fa-arrow-down"></i
+            ></a>
+           <!--  <a href="#features" class="btn-light"
+              >View Features <i class="fa-solid fa-arrow-right"></i
+            ></a> -->
+             <a href="#demo" class="btn-light"
+              >Watch Demo <i class="fa-solid fa-play"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-strip">
+        <div class="hstat">
+          <div class="hstat-icon"><i class="fa-solid fa-plug"></i></div>
+          <div>
+            <div class="hstat-n">B2B</div>
+            <div class="hstat-l">SaaS Platform</div>
+          </div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div>
+            <div class="hstat-n">1</div>
+            <div class="hstat-l">Unified Dashboard</div>
+          </div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-icon"><i class="fa-solid fa-cube"></i></div>
+          <div>
+            <div class="hstat-n">Digital</div>
+            <div class="hstat-l">Twin Technology</div>
+          </div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-icon"><i class="fa-solid fa-percent"></i></div>
+          <div>
+            <div class="hstat-n">15<span>%</span></div>
+            <div class="hstat-l">Energy Cost Reduction</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- VIDEO + INTRO -->
+    <section id="demo" class="video-section">
+      <div class="container">
+        <div class="video-section-grid">
+          <div>
+            <div class="video-wrap">
+              <iframe
+                src="https://player.vimeo.com/video/1080780233?autoplay=0&title=0&byline=0&portrait=0&color=B10A19"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                title="GreenPoint Platform Overview">
+              </iframe>
+              <div class="video-label">
+                <div class="vdot"></div>
+                <span>GreenPoint &mdash; Platform Overview</span>
+              </div>
+            </div>
+          </div>
+          <div class="video-intro-text">
+            <div class="outcome-chip"><i class="fa-solid fa-circle-check"></i> What We Solve</div>
+            <h2>One platform for all your energy and mobility data</h2>
+            <p>Today&#8217;s energy-mobility operations are fragmented across hardware, vendors, and siloed applications. GreenPoint acts as the central intelligence layer &mdash; pulling everything into one unified, actionable view.</p>
+            <p>From EV fleets to smart city infrastructure, GreenPoint fuses real-time data streams to deliver predictive insights and digital twin simulations that weren&#8217;t possible before.</p>
+            <a href="#features" class="btn-red">Explore Features <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM / SOLUTION — NUMBERED CARDS -->
+    <section class="ps-section ps-section-bg">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:0">
+          <div class="s-tag" style="justify-content:center;display:inline-flex">The Problem &amp; Solution</div>
+          <h2 class="s-title" style="text-align:center">The islands of energy data &mdash; and how we fix them</h2>
+        </div>
+        <div class="ps-columns">
+
+          <!-- PROBLEM -->
+          <div>
+            <div class="ps-col-head red-border">
+              <div class="ps-col-icon red"><i class="fa-solid fa-triangle-exclamation"></i></div>
+              <div class="ps-col-label">The Problem Today</div>
+            </div>
+            <div class="ps-points">
+              <div class="ps-point problem-pt">
+                <div class="ps-point-num red">01</div>
+                <div>
+                  <div class="ps-point-title">Fragmented, siloed data</div>
+                  <div class="ps-point-desc">Vehicle telematics, charging sessions, and billing all live in separate systems with no way to connect them.</div>
+                </div>
+              </div>
+              <div class="ps-point problem-pt">
+                <div class="ps-point-num red">02</div>
+                <div>
+                  <div class="ps-point-title">Vendor lock-in per hardware</div>
+                  <div class="ps-point-desc">Every EV brand or charger requires its own app &mdash; creating operational overhead and incomplete pictures.</div>
+                </div>
+              </div>
+              <div class="ps-point problem-pt">
+                <div class="ps-point-num red">03</div>
+                <div>
+                  <div class="ps-point-title">Reactive, not predictive</div>
+                  <div class="ps-point-desc">Without unified data, battery issues and range problems are discovered too late &mdash; costing time and money.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SOLUTION -->
+          <div>
+            <div class="ps-col-head green-border">
+              <div class="ps-col-icon green"><i class="fa-solid fa-circle-check"></i></div>
+              <div class="ps-col-label">The GreenPoint Solution</div>
+            </div>
+            <div class="ps-points">
+              <div class="ps-point solution-pt">
+                <div class="ps-point-num green">01</div>
+                <div>
+                  <div class="ps-point-title">One unified dashboard</div>
+                  <div class="ps-point-desc">Hardware-agnostic connector pulls data from any asset &mdash; any brand, any network &mdash; into a single source of truth.</div>
+                </div>
+              </div>
+              <div class="ps-point solution-pt">
+                <div class="ps-point-num green">02</div>
+                <div>
+                  <div class="ps-point-title">Proprietary data fusion</div>
+                  <div class="ps-point-desc">Telematics + charging history + weather + energy generation fused together using our own algorithms.</div>
+                </div>
+              </div>
+              <div class="ps-point solution-pt">
+                <div class="ps-point-num green">03</div>
+                <div>
+                  <div class="ps-point-title">Digital twin &amp; predictive simulation</div>
+                  <div class="ps-point-desc">Virtual models of vehicles and facilities run simulations for battery health, optimal charging, and fleet planning.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="features" style="background: var(--white)">
+      <div class="container">
+        <div class="s-tag">Platform Capabilities</div>
+        <h2 class="s-title">What GreenPoint enables</h2>
+        <p class="s-sub">
+          Six core capabilities that transform how energy-mobility operations
+          are managed, optimised, and planned.
+        </p>
+        <div class="feat-grid">
+          <div class="feat-card">
+            <div class="feat-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h4>Unified Data Aggregation</h4>
+            <p>
+              A single source of truth pulling from any connected asset &#8212;
+              regardless of brand or provider &#8212; into one intuitive
+              dashboard. No more multi-platform management.
+            </p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon"><i class="fa-solid fa-code-merge"></i></div>
+            <h4>Advanced Data Fusion</h4>
+            <p>
+              Proprietary algorithms intelligently fuse vehicle telematics with
+              charging history, on-site energy generation, and real-time weather
+              data &#8212; creating the foundation for true intelligence.
+            </p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon"><i class="fa-solid fa-cube"></i></div>
+            <h4>Digital Twin Technology</h4>
+            <p>
+              Create virtual models of vehicles, fleets, or entire facilities.
+              Run simulations to predict battery performance, model fleet
+              electrification, and test operational scenarios before deployment.
+            </p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <h4>Energy Optimisation</h4>
+            <p>
+              Simulate charging at different times of day using time-of-use
+              electricity rates. Identify the most cost-effective schedule for
+              every vehicle and reduce energy costs by up to 15%.
+            </p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon"><i class="fa-solid fa-car-battery"></i></div>
+            <h4>Battery Performance Prediction</h4>
+            <p>
+              Model the impact of temperature, driving behaviour, and charging
+              patterns on battery degradation &#8212; enabling proactive
+              maintenance and eliminating range anxiety.
+            </p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon"><i class="fa-solid fa-sitemap"></i></div>
+            <h4>Hardware Agnosticism</h4>
+            <p>
+              Works with any EV brand, charger network, or energy provider. No
+              vendor lock-in. GreenPoint integrates with what you already have
+              and what you&#8217;ll add next.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" style="padding: 0">
+      <div class="container" style="max-width: 100%; padding: 0">
+        <div class="impact-grid">
+          <div class="imp-cell">
+            <div class="imp-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="imp-num">15%</div>
+            <div class="imp-label">
+              Energy Cost Reduction in Pilot Deployments
+            </div>
+          </div>
+          <div class="imp-cell">
+            <div class="imp-icon"><i class="fa-solid fa-plug"></i></div>
+            <div class="imp-num">1</div>
+            <div class="imp-label">
+              Unified Dashboard for All Assets &amp; Brands
+            </div>
+          </div>
+          <div class="imp-cell">
+            <div class="imp-icon"><i class="fa-solid fa-cube"></i></div>
+            <div class="imp-num">3</div>
+            <div class="imp-label">
+              Data Streams Fused &#8212; Telematics, Charging, Weather
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: var(--bg)">
+      <div class="container">
+        <div class="s-tag">Use Case</div>
+        <h2 class="s-title">Optimising an electrified logistics fleet</h2>
+        <p class="s-sub" style="margin-bottom: 28px">
+          A major logistics company electrifying its delivery fleet used
+          vehicles from three manufacturers, charging across two public networks
+          and a private depot.
+        </p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+          <div
+            style="
+              background: var(--white);
+              border-radius: var(--r);
+              padding: 28px 24px;
+              border: 1px solid var(--border);
+              border-left: 4px solid #dc2626;
+            "
+          >
+            <div
+              style="
+                font-size: 10.5px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #dc2626;
+                margin-bottom: 12px;
+              "
+            >
+              Before GreenPoint
+            </div>
+            <p
+              style="
+                font-size: 14.5px;
+                line-height: 1.75;
+                font-weight: 300;
+              "
+            >
+              The fleet manager spent hours manually reconciling charging
+              reports with vehicle mileage &#8212; incomplete data and
+              guesswork. Unable to optimise charging schedules. Worried about
+              unpredictable battery performance on cold days.
+            </p>
+          </div>
+          <div
+            style="
+              background: var(--white);
+              border-radius: var(--r);
+              padding: 28px 24px;
+              border: 1px solid var(--border);
+              border-left: 4px solid #16a34a;
+            "
+          >
+            <div
+              style="
+                font-size: 10.5px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #16a34a;
+                margin-bottom: 12px;
+              "
+            >
+              With GreenPoint
+            </div>
+            <p
+              style="
+                font-size: 14.5px;
+                line-height: 1.75;
+                font-weight: 300;
+              "
+            >
+              All vehicles and chargers connected to one platform. Real-time
+              telematics fused with charging data and weather. Simulations model
+              cold-snap impact on range and recommend optimal routes and
+              charging schedules. Result: 15% energy cost reduction, zero range
+              anxiety.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta">
+      <div class="container">
+        <div class="cta-inner">
+          <div class="cta-left">
+            <div class="cta-bar"></div>
+            <div class="cta-h">
+              Ready to unify your energy-mobility operations?
+            </div>
+            <p class="cta-p">
+              Whether you manage an electric fleet, smart city infrastructure,
+              or EV charging networks &#8212; GreenPoint gives you the unified
+              intelligence layer you need.
+            </p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap">
+              <a href="mailto:director@kottackal.org" class="btn-red-lg">Get in Touch <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <a
+                href="index.html#solutions"
+                class="btn-light"
+                style="padding: 11px 20px; font-size: 14px"
+                >All Solutions</a
+              >
+            </div>
+          </div>
+          <div class="cta-right">
+            <img
+              src="./assets/img/greenpoint/cta-img.avif"
+              alt="EV fleet"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+   <footer id="footer"><div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img src="assets/img/logo.png" alt="Kottackal Business Solutions"></div>
+        <p class="foot-about">We design intelligent systems that automate, verify, and unify complex operations across industries.</p>
+        <div class="foot-soc"><a href="https://www.linkedin.com/company/kottackal-business-solutions-pvt-ltd-/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a></div>
+      </div>
+      <div class="foot-col"><h4>Solutions</h4><ul>
+        <li><a href="tradetrip.html">TradeTrip</a></li>
+        <li><a href="zk-vaiap.html">ZK-VAIAP</a></li>
+        <li><a href="sensor-network.html">Sensor Network</a></li>
+        <li><a href="greenpoint.html">GreenPoint</a></li>
+      </ul></div>
+      <div class="foot-col"><h4>Company</h4><ul>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#capabilities">Capabilities</a></li>
+        <li><a href="index.html#differentiation">Why Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul></div>
+
+       <div class="foot-col"><h4>Contact</h4>
+        <div style="font-size:9.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:whitesmoke;margin-bottom:8px">Kerala, India</div>
+        <div class="fci"><i class="fa-solid fa-location-dot"></i><span>Kottackal Business Solutions Pvt Ltd,<br>DOTSPACE, Ushasandhya, <br>TC No. 24/3088/2, <br>Devaswam Board Road, Kowdiar, <br>Trivandrum - 695003, Kerala, India</span></div>
+        <div style="height:1px;background:rgba(255,255,255,.08);margin:10px 0"></div>
+        
+         <div class="fci"><i class="fa-solid fa-envelope"></i><a href="mailto:director@kottackal.org">director@kottackal.org</a></div>
+        <div class="fci"><i class="fa-solid fa-phone"></i><a href="tel:+919447763144">+91-9447763144</a></div>
+     
+      </div>
+
+       <div class="foot-col"><h4></h4>
+  <div style="font-size:9.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:whitesmoke;margin-bottom:8px">
+          <br>Doha, Qatar</div>
+        <div class="fci"><i class="fa-solid fa-location-dot"></i><span>Kottackal Technologies QFZ LLC.<br>Coworking space 94, Ras Bufontas Admin Building,<br>
+        Building 1, Street 504, Zone 49, Ras Bufontas Free Zone, Doha, Qatar.</span></div>
+       </div>
+    </div>
+    <div class="foot-bot">
+      <p>&copy; 2026 Kottackal Business Solutions Pvt. Ltd. All Rights Reserved.</p>
+      <p>Kerala, India &nbsp;&middot;&nbsp; Doha, Qatar</p>
+    </div>
+  </div></footer>
+    <a href="#" class="btt" id="btt"><i class="fa-solid fa-arrow-up"></i></a>
+    <script>
+      var nav = document.getElementById("nav"),
+        btt = document.getElementById("btt");
+      window.addEventListener("scroll", function () {
+        nav.classList.toggle("raised", window.scrollY > 8);
+        btt.classList.toggle("visible", window.scrollY > 400);
+      });
+      var burger = document.getElementById("burger"),
+        mob = document.getElementById("mobNav");
+      burger.addEventListener("click", function () {
+        burger.classList.toggle("open");
+        mob.classList.toggle("open");
+        document.body.style.overflow = mob.classList.contains("open") ? "hidden" : "";
+      });
+      mob.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", function () {
+          burger.classList.remove("open");
+          mob.classList.remove("open");
+          document.body.style.overflow = "";
+        });
+      });
+    </script>
+  </body>
+</html>

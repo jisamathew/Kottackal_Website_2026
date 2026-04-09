@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      ZK-VAIAP — Verifiable AI Assurance Platform | Kottackal Business Solutions
+    </title>
+    <meta
+      name="description"
+      content="ZK-VAIAP provides cryptographic proof that AI systems are safe, compliant, and privacy-preserving — without exposing sensitive data or proprietary models."
+    />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KLQ6RECET6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KLQ6RECET6');
+</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/projects.css" />
+
+  <style>
+    /* ── VIDEO SECTION ── */
+    .video-section{background:var(--bg);padding:64px 0}
+    .video-section-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+    .video-wrap{border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-lg);border:1px solid var(--border);background:#000}
+    .video-wrap iframe{width:100%;aspect-ratio:16/9;display:block;border:none}
+    .video-label{padding:10px 16px;background:var(--white);border-top:1px solid var(--border);display:flex;align-items:center;gap:8px}
+    .vdot{width:7px;height:7px;background:var(--red);border-radius:50%;animation:vdotpulse 2s ease infinite;flex-shrink:0}
+    @keyframes vdotpulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+    .video-label span{font-size:12px;color:var(--muted);font-weight:500}
+    .video-intro-text h2{font-family:var(--fh);font-size:clamp(20px,2.6vw,30px);font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:12px}
+    .video-intro-text p{font-size:15px;color:darkslategray;line-height:1.8;font-weight:300;margin-bottom:14px}
+    .outcome-chip{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#16A34A;background:#DCFCE7;border:1px solid #BBF7D0;padding:5px 12px;border-radius:20px;margin-bottom:16px}
+
+    /* ── PROBLEM/SOLUTION — NUMBERED CARDS ── */
+    .ps-section{padding:64px 0}
+    .ps-section-bg{background:var(--white)}
+    .ps-section-bg2{background:var(--bg)}
+    .ps-columns{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:44px}
+    /* Column header */
+    .ps-col-head{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:16px;border-bottom:2px solid var(--border)}
+    .ps-col-head.red-border{border-bottom-color:#DC2626}
+    .ps-col-head.green-border{border-bottom-color:#16A34A}
+    .ps-col-label{font-family:var(--fh);font-size:18px;font-weight:700;color:var(--ink)}
+    .ps-col-icon{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+    .ps-col-icon.red{background:#FEE2E2;color:#DC2626}
+    .ps-col-icon.green{background:#DCFCE7;color:#16A34A}
+    /* Numbered point cards */
+    .ps-points{display:flex;flex-direction:column;gap:12px}
+    .ps-point{display:flex;align-items:flex-start;gap:14px;background:var(--bg);border-radius:10px;padding:16px 18px;border:1px solid var(--border);transition:border-color .28s,box-shadow .28s}
+    .ps-point:hover{border-color:rgba(177,10,25,.18);box-shadow:0 2px 12px rgba(0,0,0,.06)}
+    .ps-point.problem-pt{border-left:3px solid #FCA5A5}
+    .ps-point.solution-pt{border-left:3px solid #86EFAC}
+    .ps-point-num{font-family:var(--fh);font-size:22px;font-weight:700;line-height:1;flex-shrink:0;width:28px;margin-top:2px}
+    .ps-point-num.red{color:#DC2626}
+    .ps-point-num.green{color:#16A34A}
+    .ps-point-title{font-size:13.5px;font-weight:600;color:var(--ink);margin-bottom:3px;line-height:1.3}
+    .ps-point-desc{font-size:14.5px;color:darkslategray;line-height:1.6;font-weight:300}
+
+    @media(max-width:768px){
+      .video-section-grid{grid-template-columns:1fr}
+      .ps-columns{grid-template-columns:1fr}
+    }
+    @media(max-width:480px){
+      .ps-point{padding:13px 14px}
+      .ps-point-num{font-size:18px;width:22px}
+    }
+  </style>
+
+  </head>
+  <body>
+    <div id="topbar">
+      <div class="container">
+        <div class="tb-in">
+          <div class="tb-left">
+            <a href="mailto:director@kottackal.org"><i class="fa-solid fa-envelope"></i>director@kottackal.org</a
+            >
+            <a href="tel:+919447763144"
+              ><i class="fa-solid fa-phone"></i>+91-9447763144</a
+            >
+          </div>
+          <div class="tb-right">
+            <a
+              href="https://www.linkedin.com/company/kottackal-business-solutions-pvt-ltd-/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav id="nav">
+      <div class="container">
+        <div class="nav-in">
+          <a href="index.html" class="nav-logo"
+            ><img src="assets/img/logo.png" alt="Kottackal Business Solutions"
+          /></a>
+          <ul class="nav-links">
+            <li><a href="index.html#problem">What We Solve</a></li>
+            <li><a href="index.html#capabilities">Capabilities</a></li>
+            <li><a href="index.html#solutions">Solutions</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact" class="nav-btn">Talk to Us</a></li>
+          </ul>
+          <button class="burger" id="burger">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="mob-nav" id="mobNav">
+      <a href="index.html#problem">What We Solve</a>
+      <a href="index.html#capabilities">Capabilities</a>
+      <a href="index.html#solutions">Solutions</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Talk to Us</a>
+    </div>
+
+    <section id="hero">
+      <div class="hero-photo">
+        <img
+          src="./assets/img/zk/hero-img.avif"
+          alt="AI verification and compliance"
+          loading="eager"
+        />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-red-bar"></div>
+      <div class="container" style="position: relative; z-index: 1">
+        <div class="hero-content">
+          <div class="breadcrumb">
+            <a href="index.html">Home</a
+            ><i class="fa-solid fa-chevron-right"></i
+            ><a href="index.html#solutions">Solutions</a
+            ><i class="fa-solid fa-chevron-right"></i
+            ><span style="color: var(--ink)">ZK-VAIAP</span>
+          </div>
+          <div class="hero-tag">Verifiable Intelligence</div>
+          <h1 class="hero-h1">
+            From AI trust assumptions<br />to <em>cryptographic proof.</em>
+          </h1>
+          <p class="hero-p">
+            ZK-VAIAP provides cryptographic proof that AI systems are safe,
+            compliant, and privacy-preserving &#8212; without exposing sensitive
+            data or proprietary models. Built for regulated sectors where trust
+            must be verifiable, not assumed.
+          </p>
+          <div class="hero-pills">
+            <div class="pill">
+              <i class="fa-solid fa-fingerprint"></i>Zero-Knowledge Proofs
+            </div>
+            <div class="pill">
+              <i class="fa-solid fa-shield-halved"></i>Privacy-Preserving
+            </div>
+            <div class="pill">
+              <i class="fa-solid fa-gavel"></i>Regulatory Compliance
+            </div>
+            <div class="pill">
+              <i class="fa-solid fa-hospital"></i>Healthcare AI Focus
+            </div>
+          </div>
+          <div class="hero-ctas">
+            <a href="#intro" class="btn-red"
+              >See How It Works <i class="fa-solid fa-arrow-down"></i
+            ></a>
+             <a href="#demo" class="btn-light"
+              >Watch Demo <i class="fa-solid fa-play"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-strip">
+        <div class="hstat">
+          <div class="hstat-icon"><i class="fa-solid fa-fingerprint"></i></div>
+          <div>
+            <div class="hstat-n">ZK</div>
+            <div class="hstat-l">Zero-Knowledge Proofs</div>
+          </div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-icon"><i class="fa-solid fa-gavel"></i></div>
+          <div>
+            <div class="hstat-n">Reg</div>
+            <div class="hstat-l">Regulatory Ready</div>
+          </div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-icon"><i class="fa-solid fa-university"></i></div>
+          <div>
+            <div class="hstat-n">ENU</div>
+            <div class="hstat-l">Edinburgh Napier Partnership</div>
+          </div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-icon"><i class="fa-solid fa-hospital"></i></div>
+          <div>
+            <div class="hstat-n">Doha</div>
+            <div class="hstat-l">Initial Focus: Gulf Healthcare</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- VIDEO + INTRO -->
+    <section id="demo" class="video-section">
+      <div class="container">
+        <div class="video-section-grid">
+          <div>
+            <div class="video-wrap">
+              <iframe
+                src="https://player.vimeo.com/video/1139470049?autoplay=0&title=0&byline=0&portrait=0&color=B10A19"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                title="ZK-VAIAP Platform Overview">
+              </iframe>
+              <div class="video-label">
+                <div class="vdot"></div>
+                <span>ZK-VAIAP &mdash; Platform Overview</span>
+              </div>
+            </div>
+          </div>
+          <div class="video-intro-text">
+            <div class="outcome-chip"><i class="fa-solid fa-circle-check"></i> What We Solve</div>
+            <h2>Cryptographic proof that your AI is safe and compliant</h2>
+            <p>Current AI governance relies on documentation and post-hoc audits &mdash; approaches that will fail as AI systems grow more complex. Regulators and hospitals need verifiable proof, not trust-based assurances.</p>
+            <p>ZK-VAIAP provides that proof using zero-knowledge cryptography &mdash; without exposing sensitive patient data or proprietary model internals.</p>
+            <a href="#features" class="btn-red">Explore Capabilities <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM / SOLUTION — NUMBERED CARDS -->
+    <section class="ps-section ps-section-bg">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:0">
+          <div class="s-tag" style="justify-content:center;display:inline-flex">The Problem &amp; Solution</div>
+          <h2 class="s-title" style="text-align:center">AI governance built on trust &mdash; and why it breaks</h2>
+        </div>
+        <div class="ps-columns">
+
+          <!-- PROBLEM -->
+          <div>
+            <div class="ps-col-head red-border">
+              <div class="ps-col-icon red"><i class="fa-solid fa-triangle-exclamation"></i></div>
+              <div class="ps-col-label">The Problem Today</div>
+            </div>
+            <div class="ps-points">
+              <div class="ps-point problem-pt">
+                <div class="ps-point-num red">01</div>
+                <div>
+                  <div class="ps-point-title">Unverifiable privacy claims</div>
+                  <div class="ps-point-desc">Hospitals and regulators cannot independently verify whether patient data (PII) is truly removed before AI processing.</div>
+                </div>
+              </div>
+              <div class="ps-point problem-pt">
+                <div class="ps-point-num red">02</div>
+                <div>
+                  <div class="ps-point-title">Trust-based audits don&#8217;t scale</div>
+                  <div class="ps-point-desc">Documentation and post-hoc reviews are insufficient as AI systems grow more complex and powerful in regulated sectors.</div>
+                </div>
+              </div>
+              <div class="ps-point problem-pt">
+                <div class="ps-point-num red">03</div>
+                <div>
+                  <div class="ps-point-title">Slow AI adoption &amp; compliance risk</div>
+                  <div class="ps-point-desc">Lack of verifiable assurance blocks AI deployment in healthcare, creating regulatory penalties and reputational risk.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SOLUTION -->
+          <div>
+            <div class="ps-col-head green-border">
+              <div class="ps-col-icon green"><i class="fa-solid fa-circle-check"></i></div>
+              <div class="ps-col-label">The ZK-VAIAP Solution</div>
+            </div>
+            <div class="ps-points">
+              <div class="ps-point solution-pt">
+                <div class="ps-point-num green">01</div>
+                <div>
+                  <div class="ps-point-title">Cryptographic proof, not documentation</div>
+                  <div class="ps-point-desc">Zero-knowledge proofs verify that privacy, safety, and fairness requirements are met &mdash; without revealing data or models.</div>
+                </div>
+              </div>
+              <div class="ps-point solution-pt">
+                <div class="ps-point-num green">02</div>
+                <div>
+                  <div class="ps-point-title">Continuous compliance monitoring</div>
+                  <div class="ps-point-desc">Always-on verification throughout the AI system&#8217;s lifecycle &mdash; ready for regulatory review at any moment.</div>
+                </div>
+              </div>
+              <div class="ps-point solution-pt">
+                <div class="ps-point-num green">03</div>
+                <div>
+                  <div class="ps-point-title">Detect hidden risks in AI models</div>
+                  <div class="ps-point-desc">Cryptographic analysis finds bias, data leakage, and vulnerabilities that surface-level documentation audits miss entirely.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="features" style="background: var(--white)">
+      <div class="container">
+        <div class="s-tag">Platform Capabilities</div>
+        <h2 class="s-title">Verifiable AI assurance, end to end</h2>
+        <p class="s-sub">
+          Purpose-built for regulated sectors where AI compliance must be
+          provable, not assumed.
+        </p>
+        <div class="feat-grid">
+          <div class="feat-card">
+            <div class="feat-icon"><i class="fa-solid fa-fingerprint"></i></div>
+            <h4>Zero-Knowledge Proof Engine</h4>
+            <p>
+              Provides cryptographic proof that AI systems meet privacy, safety,
+              and fairness requirements &#8212; without revealing sensitive data
+              or proprietary model internals.
+            </p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h4>PII Verification</h4>
+            <p>
+              Verifiable proof that personally identifiable information is fully
+              removed before AI processing &#8212; critical for healthcare,
+              finance, and other regulated sectors.
+            </p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <h4>Hidden Risk Detection</h4>
+            <p>
+              Detects risks that surface-level audits miss &#8212; bias, data
+              leakage, model vulnerabilities &#8212; using cryptographic
+              analysis rather than documentation review.
+            </p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+            <h4>Continuous Monitoring</h4>
+            <p>
+              Ongoing verification that compliance is maintained throughout the
+              AI system&#8217;s lifecycle &#8212; not just at point of
+              deployment, but continuously in production.
+            </p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon"><i class="fa-solid fa-gavel"></i></div>
+            <h4>Regulatory Audit Readiness</h4>
+            <p>
+              Always-on audit trail and compliance evidence for regulators
+              &#8212; accelerating approvals and reducing the cost of regulatory
+              engagement.
+            </p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon"><i class="fa-solid fa-hospital"></i></div>
+            <h4>Healthcare &amp; Clinical AI Focus</h4>
+            <p>
+              Purpose-built for clinical AI deployments &#8212; hospitals,
+              healthcare AI startups, and regulators overseeing patient data
+              usage. Initial focus on Gulf healthcare digital transformation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" style="padding: 0">
+      <div class="container" style="max-width: 100%; padding: 0">
+        <div class="impact-grid">
+          <div class="imp-cell">
+            <div class="imp-icon"><i class="fa-solid fa-fingerprint"></i></div>
+            <div class="imp-num">ZK</div>
+            <div class="imp-label">
+              Cryptographic Proof &#8212; Not Documentation
+            </div>
+          </div>
+          <div class="imp-cell">
+            <div class="imp-icon"><i class="fa-solid fa-university"></i></div>
+            <div class="imp-num">ENU</div>
+            <div class="imp-label">
+              Edinburgh Napier University Research Partnership
+            </div>
+          </div>
+          <div class="imp-cell">
+            <div class="imp-icon"><i class="fa-solid fa-hospital"></i></div>
+            <div class="imp-num">Gulf</div>
+            <div class="imp-label">
+              Initial Focus: Doha Healthcare Digital Transformation
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: var(--bg)">
+      <div class="container">
+        <div class="s-tag">Business Model</div>
+        <h2 class="s-title">Scalable across geographies and sectors</h2>
+        <p class="s-sub" style="margin-bottom: 36px">
+          ZK-VAIAP is designed to become foundational infrastructure for
+          clinical and regulated AI globally.
+        </p>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+          "
+        >
+          <div
+            style="
+              background: var(--white);
+              border-radius: var(--r);
+              padding: 24px 20px;
+              border: 1px solid var(--border);
+            "
+          >
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                border-radius: 9px;
+                background: var(--red-l);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--red);
+                font-size: 16px;
+                margin-bottom: 12px;
+              "
+            >
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <div
+              style="
+                font-family: var(--fh);
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--ink);
+                margin-bottom: 6px;
+              "
+            >
+              Enterprise SaaS
+            </div>
+            <p
+              style="
+                font-size: 14.5px;
+                color: darkslategray;
+                line-height: 1.65;
+                font-weight: 300;
+              "
+            >
+              Continuous verification subscriptions for hospitals, AI
+              developers, and regulated enterprises deploying AI at scale.
+            </p>
+          </div>
+          <div
+            style="
+              background: var(--white);
+              border-radius: var(--r);
+              padding: 24px 20px;
+              border: 1px solid var(--border);
+            "
+          >
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                border-radius: 9px;
+                background: var(--red-l);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--red);
+                font-size: 16px;
+                margin-bottom: 12px;
+              "
+            >
+              <i class="fa-solid fa-file-contract"></i>
+            </div>
+            <div
+              style="
+                font-family: var(--fh);
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--ink);
+                margin-bottom: 6px;
+              "
+            >
+              Per-Audit Fees
+            </div>
+            <p
+              style="
+                font-size: 14.5px;
+                color:darkslategray;
+                line-height: 1.65;
+                font-weight: 300;
+              "
+            >
+              Model deployment audits charged per engagement &#8212; ideal for
+              AI startups seeking compliance evidence for regulatory
+              submissions.
+            </p>
+          </div>
+          <div
+            style="
+              background: var(--white);
+              border-radius: var(--r);
+              padding: 24px 20px;
+              border: 1px solid var(--border);
+            "
+          >
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                border-radius: 9px;
+                background: var(--red-l);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--red);
+                font-size: 16px;
+                margin-bottom: 12px;
+              "
+            >
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div
+              style="
+                font-family: var(--fh);
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--ink);
+                margin-bottom: 6px;
+              "
+            >
+              Certification Services
+            </div>
+            <p
+              style="
+                   font-size: 14.5px;
+                color:darkslategray;
+                line-height: 1.65;
+                font-weight: 300;
+              "
+            >
+              Formal compliance certification for AI systems &#8212; recognised
+              assurance for regulators, procurement, and public-sector
+              deployments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta">
+      <div class="container">
+        <div class="cta-inner">
+          <div class="cta-left">
+            <div class="cta-bar"></div>
+            <div class="cta-h">Ready to make your AI verifiably compliant?</div>
+            <p class="cta-p">
+              Whether you&#8217;re a hospital deploying AI, a healthcare AI
+              startup seeking regulatory approval, or a regulator seeking
+              verifiable assurance &#8212; let&#8217;s talk.
+            </p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap">
+              <a href="mailto:director@kottackal.org" class="btn-red-lg">Get in Touch <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <a
+                href="index.html#solutions"
+                class="btn-light"
+                style="padding: 11px 20px; font-size: 14px"
+                >All Solutions</a
+              >
+            </div>
+          </div>
+          <div class="cta-right">
+            <img
+              src="./assets/img/zk/cta-img.avif"
+              alt="AI verification"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <footer id="footer"><div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img src="assets/img/logo.png" alt="Kottackal Business Solutions"></div>
+        <p class="foot-about">We design intelligent systems that automate, verify, and unify complex operations across industries.</p>
+        <div class="foot-soc"><a href="https://www.linkedin.com/company/kottackal-business-solutions-pvt-ltd-/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a></div>
+      </div>
+      <div class="foot-col"><h4>Solutions</h4><ul>
+        <li><a href="tradetrip.html">TradeTrip</a></li>
+        <li><a href="zk-vaiap.html">ZK-VAIAP</a></li>
+        <li><a href="sensor-network.html">Sensor Network</a></li>
+        <li><a href="greenpoint.html">GreenPoint</a></li>
+      </ul></div>
+      <div class="foot-col"><h4>Company</h4><ul>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#capabilities">Capabilities</a></li>
+        <li><a href="index.html#differentiation">Why Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul></div>
+
+       <div class="foot-col"><h4>Contact</h4>
+        <div style="font-size:9.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:whitesmoke;margin-bottom:8px">Kerala, India</div>
+        <div class="fci"><i class="fa-solid fa-location-dot"></i><span>Kottackal Business Solutions Pvt Ltd,<br>DOTSPACE, Ushasandhya, <br>TC No. 24/3088/2, <br>Devaswam Board Road, Kowdiar, <br>Trivandrum - 695003, Kerala, India</span></div>
+        <div style="height:1px;background:rgba(255,255,255,.08);margin:10px 0"></div>
+        
+         <div class="fci"><i class="fa-solid fa-envelope"></i><a href="mailto:director@kottackal.org">director@kottackal.org</a></div>
+        <div class="fci"><i class="fa-solid fa-phone"></i><a href="tel:+919447763144">+91-9447763144</a></div>
+     
+      </div>
+
+       <div class="foot-col"><h4></h4>
+  <div style="font-size:9.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:whitesmoke;margin-bottom:8px">
+          <br>Doha, Qatar</div>
+        <div class="fci"><i class="fa-solid fa-location-dot"></i><span>Kottackal Technologies QFZ LLC.<br>Coworking space 94, Ras Bufontas Admin Building,<br>
+        Building 1, Street 504, Zone 49, Ras Bufontas Free Zone, Doha, Qatar.</span></div>
+       </div>
+    </div>
+    <div class="foot-bot">
+      <p>&copy; 2025 Kottackal Business Solutions Pvt. Ltd. All Rights Reserved.</p>
+      <p>Kerala, India &nbsp;&middot;&nbsp; Doha, Qatar</p>
+    </div>
+  </div></footer>
+    <a href="#" class="btt" id="btt"><i class="fa-solid fa-arrow-up"></i></a>
+    <script>
+      var nav = document.getElementById("nav"),
+        btt = document.getElementById("btt");
+      window.addEventListener("scroll", function () {
+        nav.classList.toggle("raised", window.scrollY > 8);
+        btt.classList.toggle("visible", window.scrollY > 400);
+      });
+      var burger = document.getElementById("burger"),
+        mob = document.getElementById("mobNav");
+      burger.addEventListener("click", function () {
+        burger.classList.toggle("open");
+        mob.classList.toggle("open");
+        document.body.style.overflow = mob.classList.contains("open") ? "hidden" : "";
+      });
+      mob.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", function () {
+          burger.classList.remove("open");
+          mob.classList.remove("open");
+          document.body.style.overflow = "";
+        });
+      });
+    </script>
+  </body>
+</html>
