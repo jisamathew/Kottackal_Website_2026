@@ -229,3 +229,43 @@
     @media(max-width:640px){
       .cap-grid,.rec-grid{grid-template-columns:1fr}
     }
+/* --- HERO STRIP RESPONSIVENESS --- */
+
+/* For Tablets (iPads, Large Android Tablets) */
+@media (max-width: 991px) {
+    .hero-strip {
+        position: relative; /* Change from absolute if it overlaps content on small screens */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #hero {
+        height: auto;
+        min-height: auto;
+        padding-bottom: 0; /* Let the strip sit naturally below */
+    }
+    .hstat {
+        border-bottom: 1px solid var(--border);
+    }
+    .hstat:nth-child(even) {
+        border-right: none;
+    }
+}
+
+/* For Mobile Phones (iPhone, Android) */
+@media (max-width: 580px) {
+    .hero-strip {
+        grid-template-columns: 1fr; /* Stack everything vertically */
+    }
+    .hstat {
+        border-right: none;
+        padding: 16px 20px;
+    }
+    .hstat:last-child {
+        border-bottom: none;
+    }
+    .hero-h1 {
+        font-size: 32px !important; /* Adjust heading for small screens */
+    }
+    .hero-content {
+        padding: 40px 0;
+    }
+}
